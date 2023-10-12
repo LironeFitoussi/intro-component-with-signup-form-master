@@ -109,8 +109,8 @@ input:focus {
     width: 100%;
     background-color: var(--Green);
     text-transform: uppercase;
-    font-weight: 500;
-    font-size: 4.5vw;
+    font-weight: 600;
+    font-size: 4vw;
     border: none;
     border-radius: .25rem;
     padding: 2vh 10vw;
