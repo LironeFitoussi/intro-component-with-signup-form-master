@@ -165,9 +165,40 @@ input:focus {
 }
 
 .errIcon {
+    display: none;
     position: absolute;
     object-fit: cover;
     width: 5vw;
     top: calc(25%);
     right: 3vw;
+}
+
+.animated {
+    animation: error-animation .5s;
+}
+
+@keyframes error-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(30deg);
+    }
+
+    40% {
+        transform: rotate(-30deg);
+    }
+
+    60% {
+        transform: rotate(30deg);
+    }
+
+    80% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
