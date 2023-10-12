@@ -16,10 +16,25 @@
   <main>
     <button class="special-discount"><p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p></button>
     <form>
-      <input type="text" id="fNameInput" placeholder="First Name">
-      <input type="text" id="lNameInput" placeholder="Last Name">
-      <input type="email" id="mailInput" placeholder="Email Address">
-      <input type="password" id="passwordInput" placeholder="Password">
+      <div id="fNameContainer">
+        <input type="text" id="fNameInput" placeholder="First Name">
+        <p class="errMsg" id="fNameError"></p>
+      </div>
+    
+      <div id="lNameContainer">
+        <input type="text" id="lNameInput" placeholder="Last Name">
+        <p class="errMsg" id="lNameError"></p>
+      </div>
+    
+      <div id="malContainer">
+        <input type="email" id="mailInput" placeholder="Email Address">
+        <p class="errMsg" id="mailError"></p>
+      </div>
+    
+      <div id="passwordContainer">
+        <input type="password" id="pswdInput" placeholder="Password">
+        <p class="errMsg" id="pswdError"></p>
+      </div>
       <button id="submitBtn">Claim your free trial</button>
       <span class="terms">By clicking the button, you are agreeing to our <a href="">Terms and Services</a></span>
     </form>
