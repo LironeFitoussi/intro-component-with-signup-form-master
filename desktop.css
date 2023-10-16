@@ -1,0 +1,44 @@
+body {
+    background-image: url(./images/bg-intro-desktop.png);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+header {
+    text-align: left;
+    justify-content: center;
+}
+
+main {
+    width: 42vw;
+}
+
+h1 {
+    font-size: 3.5vw;
+}
+
+p {
+    font-size: 1.25vw;
+}
+
+.special-discount {
+    padding: 2.5vh 7vw;
+}
+
+.special-discount > p {
+    font-size: initial;
+}
+
+form {
+    padding: 3vw;
+}
+
+input {
+    width: initial;
+    padding: 1.5vh 1.75vw;
+}
+
+.errMsg {
+    display: none;
+}

@@ -14,6 +14,8 @@ const errorIcon = $("<img>")
   .addClass("errIcon")
   .attr("src", "./images/icon-error.svg");
 
+const errMsgArray = document.querySelectorAll(".errMsg")
+
 $("form").submit(function (e) {
   e.preventDefault();
   $(".errMsg").remove();
@@ -32,21 +34,25 @@ $("form").submit(function (e) {
         case "fNameInput":
           fNameError.insertAfter(valueOfElement);
           $("#fNameContainer").append(clonedErrorIcon);
+          $(fNameError).css("display", "block");
           error();
           break;
         case "lNameInput":
           lNameError.insertAfter(valueOfElement);
           $("#lNameContainer").append(clonedErrorIcon);
+          $(lNameError).css("display", "block");
           error();
           break;
         case "mailInput":
           mailError.insertAfter(valueOfElement);
           $("#malContainer").append(clonedErrorIcon);
+          $(mailError).css("display", "block");
           error();
           break;
         case "pswdInput":
           pswdError.insertAfter(valueOfElement);
           $("#passwordContainer").append(clonedErrorIcon);
+          $(pswdError).css("display", "block");
           error();
           break;
       }
