@@ -40,5 +40,17 @@ input {
 }
 
 .errMsg {
+    font-size: 1vw;
     display: none;
+}
+
+.errIcon {
+    width: 1.5vw;
+    top: 20%;
+    right: 1.75vw;
+}
+
+#submitBtn {
+    font-size: 1.25vw;
+    padding: 2vh 0;
 }
