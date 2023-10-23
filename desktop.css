@@ -39,6 +39,16 @@ input {
     padding: 1.5vh 1.75vw;
 }
 
+footer {
+    position: absolute;
+    bottom: 1vh;
+    width: 100%;
+    left: 0;
+}
+
+.terms {
+    font-size: 0.75vw;
+}
 .errMsg {
     font-size: 1vw;
     display: none;
